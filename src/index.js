@@ -1,4 +1,7 @@
 import generateJoke from './generateJoke';
 import './styles/main.scss';
 
-console.log(generateJoke());
+const jokeBtn = document.getElementById('jokeBtn');
+jokeBtn.addEventListener('click', generateJoke);
+
+generateJoke();
